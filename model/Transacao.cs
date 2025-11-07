@@ -6,7 +6,7 @@ public class Transacao
     public DateTime Data { get; protected set; }
     public string Descricao { get; protected set; }
     public decimal Valor { get; protected set; }
-    public int ContaId { get; protected set; }
+    public Conta ContaId { get; protected set; }
 
     public void SetId(int id)
     {
@@ -32,21 +32,11 @@ public class Transacao
             throw new ArgumentOutOfRangeException("Valor inválido");
         Valor = valor;
     }
-    public void SetContaId(int contaId)
+    public void SetContaId(Conta contaId)
     {
-        if (contaId < 0)
+        if (contaId == null)
             throw new ArgumentOutOfRangeException("ContaId inválido");
         ContaId = contaId;
     }
-
-    public Transacao(int id, DateTime data, string descricao, decimal valor, int contaId)
-    {
-        SetId(id);
-        SetData(data);
-        SetDescricao(descricao);
-        SetValor(valor);
-        SetContaId(contaId);
-    }
-
 
 }

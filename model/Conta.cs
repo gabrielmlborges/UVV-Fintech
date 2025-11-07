@@ -5,11 +5,6 @@ public abstract class Conta
     public int Id { get; protected set; }
     public decimal Saldo { get; protected set; }
     public int ClienteId { get; protected set; }
-
-    public abstract void Sacar(decimal valor);
-    public abstract void Depositar(decimal valor);
-    public abstract void Tranferir(decimal valor, Conta contaDestino);
-
     public void SetId(int id)
     {
         if (id < 0)

@@ -1,13 +1,10 @@
 namespace UVV_FINTECH.model;
 
-public class Saque
+public class Saque : Transacao
 {
-    public int Id { get; protected set; }
-
-    public void SetId(int id)
+    public void Sacar()
     {
-        if (id < 0)
-            throw new ArgumentOutOfRangeException("Id inválido");
-        Id = id;
+        if (Valor < 0 || Valor < ContaId.Saldo)
+            return;
     }
 }
