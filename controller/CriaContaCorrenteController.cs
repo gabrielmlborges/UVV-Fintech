@@ -1,5 +1,3 @@
-using UVV_FINTECH.model;
-
 namespace UVV_FINTECH.controller;
 
 public class CriaContaCorrenteController
