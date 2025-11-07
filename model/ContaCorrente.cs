@@ -28,7 +28,7 @@ public class ContaCorrente : Conta
         Limite = limite;
     }
 
-    public ContaCorrente(int id, decimal saldo, int clienteId, decimal limite) : base(id, saldo, clienteId)
+    public ContaCorrente(decimal saldo, int clienteId, decimal limite) : base(saldo, clienteId)
     {
         SetLimite(limite);
     }

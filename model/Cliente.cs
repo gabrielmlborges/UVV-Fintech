@@ -32,9 +32,8 @@ public class Cliente
         Senha = senha;
     }
 
-    public Cliente(int id, string nome, string email, string senha)
+    public Cliente(string nome, string email, string senha)
     {
-        SetId(id);
         SetNome(nome);
         SetEmail(email);
         SetSenha(senha);

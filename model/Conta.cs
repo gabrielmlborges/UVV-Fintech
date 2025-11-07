@@ -29,9 +29,8 @@ public abstract class Conta
         ClienteId = clienteId;
     }
 
-    protected Conta(int id, decimal saldo, int clienteId)
+    protected Conta(decimal saldo, int clienteId)
     {
-        SetId(id);
         SetSaldo(saldo);
         SetClienteId(clienteId);
     }

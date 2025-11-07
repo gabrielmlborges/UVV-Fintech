@@ -28,7 +28,7 @@ public class ContaPoupanca : Conta
         TaxaDeRendimento = taxaDeRendimento;
     }
 
-    public ContaPoupanca(int id, decimal saldo, int clienteId, double taxaDeRendimento) : base(id, saldo, clienteId)
+    public ContaPoupanca(decimal saldo, int clienteId, double taxaDeRendimento) : base(saldo, clienteId)
     {
         SetTaxaDeRendimento(taxaDeRendimento);
     }
