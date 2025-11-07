@@ -19,7 +19,8 @@ public class Saque : ITransacao
         var conta = ContasDB.Where(c => c.Id == ContaId).FirstOrDefault();
         if (conta is null)
             throw new Exception("Conta inexiste");
-        if (SaqueController.VerificaSaque(conta.Saldo, Valor))
+
+        if (SaqueController.VerificaSaque(conta, Valor))
         {
             decimal saldo = conta.Saldo - Valor;
             conta.SetSaldo(saldo);
