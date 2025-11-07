@@ -1,0 +1,20 @@
+﻿<Window x:Class="UVV_FINTECH.view.Registro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UVV_FINTECH.view"
+        mc:Ignorable="d"
+        Title="Registro" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="NovoEmail" Content="Inserir seu Email:" HorizontalAlignment="Left" Height="36" Margin="63,173,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="NovoNome" Content="Inserir seu Nome:" HorizontalAlignment="Left" Height="36" Margin="63,94,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="NovaSenha" Content="Inserir sua Senha:" HorizontalAlignment="Left" Height="36" Margin="63,261,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="InsiraNovoNome" HorizontalAlignment="Left" Height="36" Margin="218,94,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="182" TextChanged="InsiraNovoNome_TextChanged" BorderBrush="#FF1B4CDC"/>
+        <TextBox x:Name="InsiraNovoEmail" HorizontalAlignment="Left" Height="36" Margin="218,173,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="182" TextChanged="InsiraNovoNome_TextChanged" BorderBrush="#FF1B4CDC"/>
+        <TextBox x:Name="InsiraNovaSenha" HorizontalAlignment="Left" Height="36" Margin="218,261,0,0" TextWrapping="Wrap" Text="Senha&#xD;&#xA;" VerticalAlignment="Top" Width="182" TextChanged="InsiraNovoNome_TextChanged" BorderBrush="#FF1B4CDC"/>
+        <Button x:Name="BotaoNovoRegistrar" Content="Registrar" HorizontalAlignment="Left" Height="50" Margin="565,167,0,0" VerticalAlignment="Top" Width="116" Background="#FF1B4CDC" FontWeight="Bold" FontSize="14" Click="BotaoNovoRegistrar_Click"/>
+        <Button x:Name="BotaoPossuiLogin" Content="Já possui Conta?" HorizontalAlignment="Left" Height="34" Margin="570,231,0,0" VerticalAlignment="Top" Width="106" Background="#FF5E87FF" FontWeight="Bold" Click="BotaoPossuiLogin_Click"/>
+
+    </Grid>
+</Window>
