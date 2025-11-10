@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace UVV_FINTECH.model
 {
 
-    // relacionamento 1:N com Transacao.
+    // relacionamento 1:N com Transacao
 
     public abstract class Conta
     {
