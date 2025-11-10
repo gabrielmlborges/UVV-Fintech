@@ -1,7 +1,0 @@
-flowchart TD
-    A["Login"] --> B["Verifica login"]
-    B --> C{"Tela de selecionar Conta"}
-    C --> D["Conta Corrente"]
-    C --> E["Conta poupança"]
-    D --> F["Transacao"]
-    E --> F
