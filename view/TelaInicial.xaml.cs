@@ -23,5 +23,18 @@ namespace UVV_FINTECH.view
         {
             InitializeComponent();
         }
+
+        //Desloga da conta e volta para a tela de login
+        private void RetornarTelaLogin_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+
+        private void Historico_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

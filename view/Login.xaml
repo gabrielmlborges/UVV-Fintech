@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:UVV_FINTECH"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
-    <Grid RenderTransformOrigin="0.5,0.5">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,1,0">
         <Grid.RenderTransform>
             <TransformGroup>
                 <ScaleTransform/>
                 <SkewTransform/>
-                <RotateTransform Angle="-0.489"/>
+                <RotateTransform Angle="0.117"/>
                 <TranslateTransform/>
             </TransformGroup>
         </Grid.RenderTransform>
@@ -19,8 +19,8 @@
         <TextBox x:Name="Senha" HorizontalAlignment="Left" Height="38" Margin="321,226,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" Width="154" TextChanged="Senha_TextChanged" BorderBrush="#FF1B4CDC"/>
         <Label x:Name="InserirEmail" Content="Inserir E-mail:" HorizontalAlignment="Left" Margin="322,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.563,-0.336" FontSize="16" FontWeight="Bold"/>
         <Label x:Name="InserirSenha" Content="Inserir Senha:" HorizontalAlignment="Left" Margin="321,195,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="BotaoEntrar" Content="Login" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Height="40" Width="108" Click="BotaoEntrar_Click" Background="#FF1B4CDC" FontWeight="Bold" FontSize="16" Padding="1,1,1,1" ScrollViewer.CanContentScroll="True" BorderThickness="0,1,1,1"/>
-        <Button x:Name="BotaoRegistrar" Content="Registrar?" HorizontalAlignment="Center" Height="25" Margin="0,373,0,0" VerticalAlignment="Top" Width="82" Click="BotaoRegistrar_Click" FontSize="14" Background="#FF5E87FF" FontWeight="Bold"/>
+        <Button x:Name="BotaoEntrar" Content="Login" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Height="40" Width="108" Click="BotaoEntrar_Click" Background="#FF02154E" FontWeight="Bold" FontSize="16" Padding="1,1,1,1" ScrollViewer.CanContentScroll="True" BorderThickness="0,1,1,1" Foreground="White"/>
+        <Button x:Name="BotaoRegistrar" Content="Registrar?" HorizontalAlignment="Center" Height="25" Margin="0,373,0,0" VerticalAlignment="Top" Width="82" Click="BotaoRegistrar_Click" FontSize="14" Background="#FF1B4CDC" FontWeight="Bold" Foreground="White"/>
 
     </Grid>
 </Window>

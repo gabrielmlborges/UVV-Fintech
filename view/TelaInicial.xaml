@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="TelaInicial" Height="450" Width="800">
     <Grid>
-        
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="159" VerticalAlignment="Top" Width="800" Background="#FF1B4CDC">
+            <Label Content="Saldo da conta:" HorizontalAlignment="Left" Height="35" Margin="9,9,0,0" VerticalAlignment="Top" Width="135" Foreground="White" FontSize="18"/>
+        </Border>
+        <Label Content="R$:" HorizontalAlignment="Center" Height="56" Margin="0,62,0,0" VerticalAlignment="Top" Width="780" Foreground="White" FontSize="18"/>
+        <Button x:Name="RetornarTelaLogin" Content="Sair&#xD;&#xA;" HorizontalAlignment="Left" Height="28" Margin="10,380,0,0" VerticalAlignment="Top" Width="94" Background="#FF1B4CDC" Foreground="White" Click="RetornarTelaLogin_Click" FontSize="16"/>
+        <Button x:Name="BotaoSaque" Content="Saque" HorizontalAlignment="Left" Height="53" Margin="10,179,0,0" VerticalAlignment="Top" Width="107" Background="#FF02154E" Foreground="White" FontSize="16"/>
+        <Button x:Name="BotaoDeposito" Content="Depositar" HorizontalAlignment="Left" Height="53" Margin="131,179,0,0" VerticalAlignment="Top" Width="107" Background="#FF02154E" Foreground="White" FontSize="16"/>
+        <Button x:Name="BotaoTransferencia" Content="Transferir" HorizontalAlignment="Left" Height="53" Margin="255,179,0,0" VerticalAlignment="Top" Width="107" Background="#FF02154E" Foreground="White" FontSize="16"/>
+        <ListBox x:Name="Historico" HorizontalAlignment="Left" Height="206" Margin="434,179,0,0" VerticalAlignment="Top" Width="356" d:ItemsSource="{d:SampleData ItemCount=25}" SelectionChanged="Historico_SelectionChanged"/>
+
     </Grid>
 </Window>
