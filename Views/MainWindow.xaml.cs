@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UVV_FINTECH.Services;
+using UVV_FINTECH.Data;
 
 namespace UVV_FINTECH
 {
@@ -27,23 +29,22 @@ namespace UVV_FINTECH
 
             _contaService = new ContaService(new FintechContext());
         }
-    }
 
-    private void BotaoEntrar_Click(object sender, RoutedEventArgs e)
+        private void BotaoEntrar_Click(object sender, RoutedEventArgs e)
     {
-        string nome = Email.text;
-        string cpf = 123;
-        string senha Senha.text;
+        string nome = Email.Text;
+        string cpf = "123";
+        string senha = Senha.Text;
 
-        var NovaConta = _contaService.CriarConta(nome, cpf, senha);
+        var NovaConta = _contaService.CriarContaAsync(nome, cpf, senha, 1000);
 
-        if (conta != null)
+        if (NovaConta != null)
         {
             MessageBox.Show(
                 $"✅ Conta criada com sucesso!\n" +
-                $"ID: {conta.ContaId}\n" +
-                $"Nome: {conta.NomeDono}\n" +
-                $"Saldo: {conta.Saldo:C}",
+                $"ID: {NovaConta.ContaId}\n" +
+                $"Nome: {NovaConta.NomeDono}\n" +
+                $"Saldo: {NovaConta.Saldo:C}",
                 "Sucesso",
                 MessageBoxButton.OK,
                 MessageBoxImage.Information
@@ -53,4 +54,7 @@ namespace UVV_FINTECH
             MessageBox.Show("### ERROR ###");
         }
     }
+    }
+
+    
 }

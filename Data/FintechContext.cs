@@ -14,9 +14,9 @@ public class FintechContext : DbContext
 
     public FintechContext()
     {
-        var folder = Enviornment.SpecialFolder.LocalApplicationData;
-        var path = Enviornment.GetFolderPath(folder);
-        DbPath = Path.Join(path, "Fintech.db");
+        var folder = Environment.SpecialFolder.LocalApplicationData;
+        var path = Environment.GetFolderPath(folder);
+        DbPath = Path.Join(path, "Data/Fintech.db");
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)

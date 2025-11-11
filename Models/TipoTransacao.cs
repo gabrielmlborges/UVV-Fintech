@@ -1,4 +1,4 @@
-namespace UVV_FINTECH.Models;
+namespace UVV_FINTECH.model;
 
 public enum TipoTransacao
 {

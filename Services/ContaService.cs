@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UVV_FINTECH.Data;
-using UVV_FINTECH.Models;
+using UVV_FINTECH.model;
 
 namespace UVV_FINTECH.Services;
 

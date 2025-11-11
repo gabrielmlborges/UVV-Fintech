@@ -8,7 +8,7 @@ public class Conta
     public decimal Saldo { get; private set; } = 0;
     public string NomeDono { get; set; }
     public string CpfDono { get; set; }
-    public string senha { get; set; }
+    public string Senha { get; set; }
 
     public List<Transacao> Transacoes { get; } = new();
 
@@ -18,13 +18,13 @@ public class Conta
 
         Saldo += valor;
 
-        Transacoes.Add(new Transacao)
-        {
+        Transacoes.Add(new Transacao{
             Valor = valor,
             Tipo = TipoTransacao.Deposito,
             Descricao = descricao,
-            ContaId = this.ContaId;
-        }
+            ContaId = this.ContaId
+        });
+        
 
         return true;
     }
